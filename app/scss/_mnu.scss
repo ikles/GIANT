@@ -1,0 +1,141 @@
+@media (max-width : 992px) {
+  .top-mnu {
+    display: none;
+    position: absolute;
+    left: 0;    
+    z-index: 12;
+    background-color: #000; 
+    background-color: #0C2340;
+    width: 100%;
+    padding: 10px 45px 40px 15px;
+    min-height: 100px;
+    .top-ul {
+      display: block;
+      li {
+        margin-bottom: 24px;
+      }
+      a {
+        font-size: 20px;
+      }
+    }
+    .mega-mnu-title {
+      color: #111;
+    }
+    .mega-mnu-ul a {
+      color: #999;
+      font-weight: 400;
+      &:hover {
+        color: #92ba1f;
+      }
+    }
+    .mega-mnu-butt {
+      color: #111111;
+      &:hover {
+        color: #FFF;
+      }
+    }
+    .mega-mnu-ul-big a {
+      color: #111;
+    }
+  }
+  .hidden-mnu {
+    display: block;      
+    position: relative;
+    z-index: 11;
+  }
+  .toggle-mnu {
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    width: 26px;
+    height: 9px;
+    margin: 0;   
+    margin-top: 7px;
+    &.on {
+      z-index: 13;
+      span {
+        background-color: transparent;
+      }
+    } 
+  }
+  .toggle-mnu:focus {
+    outline: none;
+  }
+  .toggle-mnu span {
+    position: relative;
+    display: block;  
+    transition: all 0.3s ;
+    backface-visibility: hidden;
+    width: 26px;
+    height: 2px;   
+    background: #fff 
+    
+  }
+  .toggle-mnu span {
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -8px;
+      width: 26px;
+      height: 2px;   
+      background: #fff;
+      transition: all 0.3s;    
+      backface-visibility: hidden;             
+      border-radius: 1px;
+    }
+  }
+  .toggle-mnu span:after {
+    top: 8px;     
+  }
+  .toggle-mnu span:before {
+
+  }
+
+  .toggle-mnu {      
+    span {
+      
+    }
+  }
+
+  .top-close-w {
+    display: flex;  
+    margin-top: -35px;
+    margin-bottom: 15px;
+  }
+  .top-close {
+    width: 24.5px;
+    height: 24.5px;
+    background: url("../img/top-close.svg") $nr 0 0;
+  }
+
+  .toggle-mnu.on span:before    {
+    transform: rotate(45deg) translate(5px, 5px);
+    top: -6px;
+  }
+  .toggle-mnu.on span:after    {
+    transform: rotate(-45deg) translate(8px, -9px);
+    top: 13px;
+  }
+  .toggle-mnu.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@media (min-width: 993px) {
+  .toggle-mnu {
+    display: none;
+  }
+  .top-mnu {
+    display: none;
+  }
+}
+
+
+

@@ -1,0 +1,137 @@
+@media only screen and (max-width : 1820px) {
+  .contain-big {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width : 1366px) {
+  .contain {
+    width: 1170px;
+  }
+  .top-mnu-li {
+    margin: 0 22px;
+  }
+  .vid-adv-r {
+    width: 546px;
+    height: 307px;
+  }
+}
+@media only screen and (max-width : 1199px) {
+  .contain {
+    width: 970px
+  }    
+  .top-mnu-li {
+    margin: 0 15px;
+  }
+  .top-mnu-a {
+    font-size: 11px;
+  }
+  .city-stars {
+    height: 465px;
+  }
+  .vid-adv-l {
+    font-size: 19px;
+  }
+  .vid-adv-r {
+    width: 465px;
+  }
+  .filtr-card-w {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filtr-card-it {
+    margin-left: 0;
+    margin-right: 0;
+    width: calc(50% - 20px);
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .contain {
+    width: 750px 
+  }    
+  .top-mnu-ul,
+  .top-mnu {
+    display: none;
+  }
+
+  .top-mnu-inn {
+    display: flex;
+    margin-top: 40px;    
+  }    
+  .top-mnu {
+    padding-left: 0;
+    padding-right: 0;
+    .top-3 {   
+      display: block;    
+      height: auto;     
+    }
+    .top-3-ul {
+      display: block;
+    }
+    .top-3-li {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .top-mnu-ul-2 {    
+      display: block;
+      margin-bottom: 20px;
+      margin-right: 40px;
+    }
+    .top-mnu-li {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+      margin-left: 0;
+    }
+    .top-mnu-a {
+      font-size: 16px;
+    }
+  }
+
+  
+  .top-3 {
+    display: none;
+  }
+  .col-mnu {
+    margin-left: 30px;
+  }
+
+  .top-3-a {
+    color: #FFF;
+  }
+} 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .contain {
+    width: 600px;
+  }
+}      
+
+@media only screen and (max-width : 640px) {
+  .contain {
+    width: 530px;
+  }
+} 
+
+
+
+@media only screen and (max-width : 570px) {
+  .contain {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+
+
+
