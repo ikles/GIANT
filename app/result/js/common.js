@@ -81,14 +81,14 @@ if($(".comp-rev-col-2").length) {
 
 
 
-if ( $('.factories-w').length ) {
-  new Swiper('.factories-w', {
+if ( $('.slider-container').length ) {
+  new Swiper('.slider-container', {
 
     scrollbar: {
       el: '.swiper-scrollbar',      
       draggable: true
     },
-    slidesPerView: 4,    
+    slidesPerView: 1,    
     simulateTouch: true,    
     touchRatio: 2,    
     touchAngle: 45,
@@ -102,23 +102,10 @@ if ( $('.factories-w').length ) {
       clickable: true
     },
     breakpoints: {
-      993: {
-        slidesPerView: 4, 
-        spaceBetween: 30,
-        loop: false,
-      },      
-      769: {   
-        slidesPerView: 3, 
-        spaceBetween: 20,
-        loop: false,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      },      
+       
       200: {   
-        slidesPerView: 2, 
-        spaceBetween: 20,
+        slidesPerView: 1, 
+        spaceBetween: 0,
         loop: true,
         pagination: {
           el: '.swiper-pagination',

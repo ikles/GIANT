@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #E4E6E8;
+$ff2: 'RideLife', sans-serif;
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+body {  
+  position: relative;
+  min-height: 100vh;
+  font-family: "ProximaNova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;    
+  color: #000;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;  
+  overflow: hidden;
+  display: flex;    
+  flex-direction: column;    
+  min-height: 100vh;
+}
+
+.contain {
+  width: 1352px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contain-big {
+  width: 1800px;  
+}
+
+section {
+  padding: 100px 0;
+}
+
+.like-h2-c {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-flex;
+  height: 60px;
+  background-image: linear-gradient(90deg, rgb(6, 6, 143) 0%, rgb(0, 235, 240) 100%);
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.pagin-arr-l-w {
+}
+
+.pagin-arr {
+  background-image: url("../img/arr_l.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  width: 48px;
+  height: 48px;  
+  transition: 0.5s;
+  &:hover {
+    background-image: url("../img/arr_hov.png");
+  }
+}
+
+.pagin-arr-r {  
+  transform: rotate(180deg);  
+}
+
+
+
+.pagin-w {
+  width: 100%;
+}
+
+.pagin-ul {
+  display: flex;
+  align-items: center;
+  width: 100%;  
+  justify-content: center;
+}
+
+.pagin-li {
+  margin: 0 15px;
+}
+
+
+.pagin-li-prev {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.pagin-li-next {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.pagin-a {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
+  &.active {  
+    color: #999999;
+  }
+}
+
+.lazy-bg {
+  background: #3c3c3c url('../img/metaball-loader.gif') $nr center;  
+  background-size: 190px;
+}
+
+
+
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+/*********************/
+
+
+
+
+@media (max-width : 992px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width : 640px) {
+  section {
+    padding: 50px 0;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+
+
+body {  
+  &.active {
+    background: url("../img/1920.jpg") no-repeat top 0px center;
+    .wrapper {
+      opacity: 0.4;
+    } 
+    .footer {
+      opacity: 0.4;
+    }
+    .get {
+      opacity: 0.4;
+    }
+  } 
+}
