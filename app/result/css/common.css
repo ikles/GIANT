@@ -36,18 +36,36 @@ body {
 section {
   padding: 100px 0; }
 
+.like-h2-l {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black;
+  font-weight: 700;
+  font-family: "RideLife", sans-serif;
+  line-height: 1.6; }
+
+.like-h2-wh {
+  font-size: 36px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  font-family: "RideLife", sans-serif; }
+
 .like-h2-c {
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: black;
   text-align: center;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: "RideLife", sans-serif;
+  line-height: 1.6; }
 
 .btn {
+  outline: none;
+  border: none;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -67,7 +85,48 @@ section {
   .btn:hover {
     text-decoration: none; }
 
-.pagin-arr {
+.select2-container {
+  width: auto !important; }
+  .select2-container .select2-selection--single {
+    height: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 0;
+    border: none;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .select2-container .select2-selection--single .select2-selection__rendered {
+      padding-right: 0;
+      padding-left: 29px; }
+    .select2-container .select2-selection--single .select2-selection__arrow {
+      background: url("../img/arr_d.png") no-repeat center;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 3px;
+      width: 5px;
+      margin-left: 10px;
+      display: block;
+      position: static;
+      margin-right: 29px; }
+      .select2-container .select2-selection--single .select2-selection__arrow b {
+        display: none; }
+  .select2-container .select2-search--dropdown .select2-search__field {
+    background: none;
+    border: none; }
+  .select2-container .select2-results__option {
+    padding: 10px 29px;
+    border: none; }
+  .select2-container .select2-dropdown {
+    border-color: #E4E6E8;
+    border-radius: 0; }
+
+.pagin-arr,
+.swiper-button {
   background-image: url("../img/arr_l.png");
   background-repeat: no-repeat;
   background-position: left top;
@@ -75,10 +134,17 @@ section {
   width: 48px;
   height: 48px;
   transition: 0.5s; }
-  .pagin-arr:hover {
+  .pagin-arr:hover,
+  .swiper-button:hover {
     background-image: url("../img/arr_hov.png"); }
 
-.pagin-arr-r {
+.swiper-button {
+  opacity: 1; }
+  .swiper-button:after {
+    display: none; }
+
+.pagin-arr-r,
+.swiper-button-next {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
@@ -121,6 +187,10 @@ section {
 .lazy-bg {
   background: #3c3c3c url("../img/metaball-loader.gif") no-repeat center;
   background-size: 190px; }
+
+.lazy-bg-w {
+  background: #fff url("../img/metaball-loader-2.gif") no-repeat center;
+  background-size: 90px; }
 
 /*********************/
 /*********************/

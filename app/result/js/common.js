@@ -119,17 +119,18 @@ if ( $('.slider-container').length ) {
 
 
 
-if ( $('.news-gal-cont').length ) {
-  new Swiper('.news-gal-cont', {
+if ( $('.calendar-it-container').length ) {
+  new Swiper('.calendar-it-container', {
 
     scrollbar: {
       el: '.swiper-scrollbar',      
       draggable: true
     },
-    slidesPerView: 3,    
+    slidesPerView: 4,    
+    spaceBetween: 40,
     simulateTouch: true,    
     touchRatio: 2,    
-    touchAngle: 45,
+    touchAngle: 45,    
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -141,13 +142,13 @@ if ( $('.news-gal-cont').length ) {
     },
     breakpoints: {
       993: {
-        slidesPerView: 3, 
-        spaceBetween: 30,
-        loop: false,
+        slidesPerView: 4, 
+        spaceBetween: 40,
+        loop: true,
       },      
       769: {   
-        slidesPerView: 3, 
-        spaceBetween: 20,
+        slidesPerView: 4, 
+        spaceBetween: 40,
         loop: false,
         pagination: {
           el: '.swiper-pagination',
@@ -155,8 +156,8 @@ if ( $('.news-gal-cont').length ) {
         }
       },      
       200: {   
-        slidesPerView: 2, 
-        spaceBetween: 20,
+        slidesPerView: 4, 
+        spaceBetween: 40,
         loop: true,
         pagination: {
           el: '.swiper-pagination',
@@ -167,6 +168,59 @@ if ( $('.news-gal-cont').length ) {
 
   });
 }
+
+
+if ( $('.privilege-slider-container').length ) {
+  new Swiper('.privilege-slider-container', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',      
+      draggable: true
+    },
+    slidesPerView: 4,    
+    spaceBetween: 40,
+    simulateTouch: true,    
+    touchRatio: 2,    
+    touchAngle: 45,    
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      993: {
+        slidesPerView: 4, 
+        spaceBetween: 40,
+        loop: true,
+      },      
+      769: {   
+        slidesPerView: 4, 
+        spaceBetween: 40,
+        loop: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },      
+      200: {   
+        slidesPerView: 4, 
+        spaceBetween: 40,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
+    },
+
+  });
+}
+
+
 
 
   //$("#phone_1").mask("+7 (999) 999-99-99");

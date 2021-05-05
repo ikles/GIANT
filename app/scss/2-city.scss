@@ -144,52 +144,7 @@ $ff2: 'RideLife', sans-serif;
 }
 
 
-.select2-container {  
-  width: auto !important;
-  .select2-selection--single {    
-    height: 40px;
-    display: flex;    
-    align-items: center;
-    border-radius: 0;
-    border: none;    
-    justify-content: space-between;
-    .select2-selection__arrow {
 
-    }
-    .select2-selection__rendered {
-      padding-right: 0;
-      padding-left: 29px;
-    }
-    .select2-selection__arrow {
-      background: url("../img/arr_d.png") $nr center;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: 3px;
-      width: 5px;
-      margin-left: 10px;
-      display: block;
-      position: static;
-      margin-right: 29px;
-      b {
-        display: none;
-      }
-    }
-  }  
-  .select2-search--dropdown {
-    .select2-search__field {
-      background: none;
-      border: none;
-    }
-  }
-  .select2-results__option {
-    padding: 10px 29px;
-    border: none;
-  }
-  .select2-dropdown {
-    border-color: $bcol;    
-    border-radius: 0;
-  }
-}  
 
 
 .filtr-card-w {
