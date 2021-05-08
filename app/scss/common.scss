@@ -86,6 +86,43 @@ section {
   line-height: 1.6;
 }
 
+.like-h3-c {
+ font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+  text-align: center;  
+  font-weight: 700;
+  font-family: $ff2;
+  line-height: 1.86; 
+}
+
+.like-h1-c {
+ font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+  text-align: center;  
+  font-weight: 700;
+  font-family: $ff2;
+  line-height: 1.2; 
+}
+
+
+
+.eye-3 {
+  background-color: #ccc;
+  width: 29px;
+  height: 29px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+
 .btn {
   outline: none;
   border: none;
