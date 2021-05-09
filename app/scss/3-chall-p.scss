@@ -45,6 +45,8 @@ $ff2: 'RideLife', sans-serif;
   justify-content: space-between;
 }
 
+
+
 .route-l {
   width: calc(50% - 20px);
 }
@@ -54,6 +56,16 @@ $ff2: 'RideLife', sans-serif;
   width: calc(50% - 20px);
   padding: 34px 40px 61px 38px;
 }
+
+.route-info-2 {
+  .route-r {
+    padding: 40px 40px 21px 38px;
+  }  
+  .route-row-33 {
+    margin-top: -7px;
+  }
+}
+
 
 .route-row-1 {
   display: flex;
@@ -158,6 +170,22 @@ $ff2: 'RideLife', sans-serif;
   margin-top: 16px;
 }
 
+.route-rec {
+ display: block;
+ width: 22px;
+ height: 20px;
+ background-image: url("../img/rec.png");
+ background-repeat: no-repeat;
+ background-position: center center;
+ opacity: 0.2;
+ margin-top: 13px;  
+}
+
+.route-btn-w {
+  margin-top: 40px;
+  width: 100%;
+}
+
 .route-clock {
  display: block;
  width: 24px;
@@ -225,28 +253,31 @@ $ff2: 'RideLife', sans-serif;
 }
 
 
-  .btn-desc-w {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.btn-desc-w {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .btn-desc {  
-    height: 40px;  
-    font-size: 16px;
-    font-weight: 600;  
-    width: 163px;
-    padding: 0 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.btn-desc {  
+  height: 40px;  
+  font-size: 16px;
+  font-weight: 600;  
+  width: 163px;
+  padding: 0 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-  .route-graph {    
-    display: flex;  
-    padding-left: 43px;
-    width: 100%;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
+.route-graph {    
+  display: flex;  
+  padding-left: 43px;
+  width: 100%;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   //outline: 1px solid rgba(#999, 0.4);
 }
 
@@ -389,6 +420,335 @@ $ff2: 'RideLife', sans-serif;
 
 
 
+
+
+
+
+
+
+
+
+
+
+.rating {
+  background-color: rgb(12, 35, 64);
+  padding-top: 88px;
+  padding-bottom: 120px;
+  .like-h2-wh-c {
+    font-size: 30px;
+  }
+}
+
+
+
+.rating-w {
+}
+
+.like-h2-wh {
+}
+
+.rating-eva-w {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.rating-eva {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+  display: block;
+}
+
+.rating-eva-span {
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+}
+
+.rating-eva-point {
+  width: 3px;
+  height: 3px;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rating-star-w {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.rating-star {
+  border-top: 1px solid rgb(62, 80, 103);
+  width: 669px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-star-it {
+  padding-top: 41px;
+  padding: 40px 10px 0 10px;
+  width: 33%;
+}
+
+.rating-star-it-2 { 
+  border-left: 1px solid rgb(62, 80, 103);
+  border-right: 1px solid rgb(62, 80, 103);  
+}
+
+.rating-star-it-txt {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.rating-star-it-row {
+  margin-top: 17px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating-star-yell-a {
+  background-image: url("../img/star_yell-1.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.rating-star-gr-a {
+  background-image: url("../img/star_gr.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.calend {
+  padding-top: 86px;
+  padding-bottom: 76px;
+  .like-h2-c {
+    font-size: 30px;
+  }
+}
+
+
+.calend-w {
+  display: flex;
+  justify-content: center;
+}
+
+.calend-w-2 {
+  max-width: 888px;
+}
+
+.like-h2-c {
+}
+
+textarea.calend-textarea {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 19px;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+  border: 1px solid rgb(216, 218, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 50px;
+}
+
+.calend-btn-w {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 49px;
+  width: 100%;
+}
+
+.calend-form {
+  border-bottom: 1px solid rgb(235, 236, 238);
+  margin-bottom: 48px;
+}
+
+
+
+
+
+.calend-com-w {
+  width: 100%;
+}
+
+.calend-txt-1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-align: center;
+  font-family: $ff2;
+}
+
+.calend-com-review-w {
+  margin-top: 47px;
+}
+
+.calend-com-review {
+  margin-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calend-com-review-reverse {
+  .calend-com-partic {
+    margin-right: 0;
+    margin-left: 61px;
+    width: 133px;
+  }
+}
+
+.calend-com-review-item {
+  border-bottom: 1px solid #ebecee;  
+  margin-bottom: 52px;
+  padding-bottom: 23px;
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.calend-com-partic {
+  width: 150px;
+  flex: none;
+  margin-right: 41px;
+}
+
+.calend-partic-ava {
+  width: 90px;
+  height: 127px;
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;  
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  -webkit-background-size: 25px;
+  -o-background-size: 25px;
+  background-size: 25px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg_photo.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 90px;
+    height: 127px;                
+    background-size: cover;
+  }    
+}
+
+.calend-partic-txt-1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: $ff2;
+}
+
+.calend-partic-txt-2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+  margin-bottom: 10px;
+}
+
+.calend-partic-img-w {
+
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.calend-review {  
+  flex-grow: 1;
+  padding: 33px 40px 40px;
+  background-color: rgb(247, 247, 247);
+  position: relative;    
+  &:before {
+    content: ''; 
+    position: absolute;
+    left: -22px;
+    top: 0px;
+    border: 22px solid transparent;
+    border-right: 22px solid #f7f7f7;
+    transform: rotate(-90deg);
+  }
+  &.calend-review-reverse {
+    padding-top: 36px;
+    &:before {    
+      left: auto;
+      right: -22px;    
+    } 
+  }  
+}
+
+.calend-review-txt {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0px;
+}
+
+.calend-review-btn {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(14, 120, 191);
+  margin-top: 11px;
+  display: inline-block;
+}
+
+.calend-review-txt-2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
+  margin-bottom: 4px;
+}
 
 @import "_mnu.scss";
 @import "_footer.scss";

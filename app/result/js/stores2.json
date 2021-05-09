@@ -1,0 +1,6 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "properties": {"balloonContentHeader": "<span class='store__title'>Магазин CityCycle</span>", "balloonContentBody": "<span class='store__address'>Москва, ул. Новопоселковая, д.6</span><a href='tel:+74959676940' class='store__phone'>+7 (495) 967-69-40</a><span class='store__shedule'>Пн-пт: 9:00-19:00; сб-вс: с 11:00-19:00</span><a class='store__email' href='mailto:hello@citycycle.ru'>hello@citycycle.ru</a><a class='store__site' href='#' target='_blank'>citycycle.ru</a><div class='store__actions'><button class='btn pickup-map__choose-pickup-point' data-modal='#modal-auth'>Выбрать</button></div>", "balloonContentFooter": "", "clusterCaption": "Магазин CityCycle", "hintContent": ""}}
+    ]
+}

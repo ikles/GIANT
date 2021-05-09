@@ -593,6 +593,12 @@ img {
   width: calc(50% - 20px);
   padding: 34px 40px 61px 38px; }
 
+.route-info-2 .route-r {
+  padding: 40px 40px 21px 38px; }
+
+.route-info-2 .route-row-33 {
+  margin-top: -7px; }
+
 .route-row-1 {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -692,6 +698,20 @@ img {
   opacity: 0.14;
   margin-top: 16px; }
 
+.route-rec {
+  display: block;
+  width: 22px;
+  height: 20px;
+  background-image: url("../img/rec.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2;
+  margin-top: 13px; }
+
+.route-btn-w {
+  margin-top: 40px;
+  width: 100%; }
+
 .route-clock {
   display: block;
   width: 24px;
@@ -780,7 +800,10 @@ img {
   width: 100%;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .route-graph-row {
   display: -webkit-flex;
@@ -936,6 +959,316 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.rating {
+  background-color: #0c2340;
+  padding-top: 88px;
+  padding-bottom: 120px; }
+  .rating .like-h2-wh-c {
+    font-size: 30px; }
+
+.rating-eva-w {
+  margin-top: 15px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 48px; }
+
+.rating-eva {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  display: block; }
+
+.rating-eva-span {
+  color: white;
+  margin-left: 5px; }
+
+.rating-eva-point {
+  width: 3px;
+  height: 3px;
+  width: 2px;
+  height: 2px;
+  background-color: #999;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.rating-star-w {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.rating-star {
+  border-top: 1px solid #3e5067;
+  width: 669px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.rating-star-it {
+  padding-top: 41px;
+  padding: 40px 10px 0 10px;
+  width: 33%; }
+
+.rating-star-it-2 {
+  border-left: 1px solid #3e5067;
+  border-right: 1px solid #3e5067; }
+
+.rating-star-it-txt {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0px; }
+
+.rating-star-it-row {
+  margin-top: 17px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.rating-star-yell-a {
+  background-image: url("../img/star_yell-1.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.rating-star-gr-a {
+  background-image: url("../img/star_gr.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-left: 6px;
+  margin-right: 6px; }
+
+.calend {
+  padding-top: 86px;
+  padding-bottom: 76px; }
+  .calend .like-h2-c {
+    font-size: 30px; }
+
+.calend-w {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.calend-w-2 {
+  max-width: 888px; }
+
+textarea.calend-textarea {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 19px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  border: 1px solid #d8dadd;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 50px; }
+
+.calend-btn-w {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 49px;
+  width: 100%; }
+
+.calend-form {
+  border-bottom: 1px solid #ebecee;
+  margin-bottom: 48px; }
+
+.calend-com-w {
+  width: 100%; }
+
+.calend-txt-1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  font-family: "RideLife", sans-serif; }
+
+.calend-com-review-w {
+  margin-top: 47px; }
+
+.calend-com-review {
+  margin-bottom: 21px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.calend-com-review-reverse .calend-com-partic {
+  margin-right: 0;
+  margin-left: 61px;
+  width: 133px; }
+
+.calend-com-review-item {
+  border-bottom: 1px solid #ebecee;
+  margin-bottom: 52px;
+  padding-bottom: 23px; }
+  .calend-com-review-item:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+
+.calend-com-partic {
+  width: 150px;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 41px; }
+
+.calend-partic-ava {
+  width: 90px;
+  height: 127px;
+  position: relative;
+  margin-bottom: 15px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: 25px; }
+  .calend-partic-ava:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg_photo.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 90px;
+    height: 127px;
+    background-size: cover; }
+
+.calend-partic-txt-1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "RideLife", sans-serif; }
+
+.calend-partic-txt-2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  margin-bottom: 10px; }
+
+.calend-partic-img-w {
+  background-repeat: no-repeat;
+  background-position: left top; }
+
+.calend-review {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 33px 40px 40px;
+  background-color: #f7f7f7;
+  position: relative; }
+  .calend-review:before {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 0px;
+    border: 22px solid transparent;
+    border-right: 22px solid #f7f7f7;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  .calend-review.calend-review-reverse {
+    padding-top: 36px; }
+    .calend-review.calend-review-reverse:before {
+      left: auto;
+      right: -22px; }
+
+.calend-review-txt {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 0px; }
+
+.calend-review-btn {
+  font-size: 15px;
+  font-weight: 300;
+  color: #0e78bf;
+  margin-top: 11px;
+  display: inline-block; }
+
+.calend-review-txt-2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  margin-bottom: 4px; }
 
 @media (max-width: 992px) {
   .top-mnu {

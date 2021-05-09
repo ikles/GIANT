@@ -53,6 +53,15 @@ section {
   color: white;
   font-family: "RideLife", sans-serif; }
 
+.like-h2-wh-c {
+  font-size: 36px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: white;
+  font-family: "RideLife", sans-serif;
+  text-align: center; }
+
 .like-h2-c {
   font-size: 36px;
   text-transform: uppercase;
