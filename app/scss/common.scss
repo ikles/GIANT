@@ -76,13 +76,13 @@ section {
 }
 
 .like-h2-wh-c {
-   font-size: 36px;
-  line-height: 1.6;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgb(255, 255, 255);
-  font-family: $ff2;
-  text-align: center; 
+ font-size: 36px;
+ line-height: 1.6;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: rgb(255, 255, 255);
+ font-family: $ff2;
+ text-align: center; 
 }
 
 .like-h2-c {
@@ -98,24 +98,24 @@ section {
 
 .like-h3-c {
  font-size: 30px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgb(0, 0, 0);
-  text-align: center;  
-  font-weight: 700;
-  font-family: $ff2;
-  line-height: 1.86; 
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: rgb(0, 0, 0);
+ text-align: center;  
+ font-weight: 700;
+ font-family: $ff2;
+ line-height: 1.86; 
 }
 
 .like-h1-c {
  font-size: 48px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: rgb(0, 0, 0);
-  text-align: center;  
-  font-weight: 700;
-  font-family: $ff2;
-  line-height: 1.2; 
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ color: rgb(0, 0, 0);
+ text-align: center;  
+ font-weight: 700;
+ font-family: $ff2;
+ line-height: 1.2; 
 }
 
 
@@ -125,7 +125,7 @@ section {
   width: 29px;
   height: 29px;
   -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   position: fixed;
   top: 0;
   left: 0;
@@ -242,6 +242,13 @@ section {
   justify-content: center;
 }
 
+.btn-small {
+  height: 40px;
+  font-size: 16px;
+  padding: 0 24px;
+  font-weight: 400;
+}
+
 .pagin-li {
   margin: 0 15px;
 }
@@ -279,6 +286,9 @@ section {
 }
 
 
+
+
+
 /*********************/
 /*********************/
 /*********************/
@@ -292,17 +302,7 @@ section {
 
 
 
-@media (max-width : 992px) {
-  section {
-    padding: 60px 0;
-  }
-}
 
-@media (max-width : 640px) {
-  section {
-    padding: 50px 0;
-  } 
-}
 
 
 

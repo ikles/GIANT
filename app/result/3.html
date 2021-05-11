@@ -9,6 +9,7 @@
   <title>Москва Кольцевая</title>
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/3-chall-p.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -114,7 +115,7 @@
 
 
 
-    <section class="route">
+    <section class="section route">
       <div class="contain">
         <div class="route-w">
           <div class="like-h1-c">москва кольцевая</div>
@@ -169,44 +170,47 @@
                     </div>
                   </div>
                 </div><!--3-->
-                <div class="route-graph">                  
-                  <div class="route-y">
-                    <span>100</span>
-                    <span>50</span>
-                    <span>0</span>
-                  </div>
-                  <div class="route-graph-x">                    
-                    <div class="route-graph-row">
-                      <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 17px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 33px; margin-bottom: 67px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 70px; margin-bottom: 19px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 10px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 126px; margin-bottom: 32px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 58px; margin-bottom: 52px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 25px; margin-bottom: 32px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 90px; margin-bottom: 17px;"></span></div>
+                <div class="route-graph-scroll">
+                  <div class="route-graph">                  
+                    <div class="route-y">
+                      <span>100</span>
+                      <span>50</span>
+                      <span>0</span>
                     </div>
-                    <div class="route-x">
-                      <span>5</span>
-                      <span>10</span>
-                      <span>15</span>
-                      <span>20</span>
-                      <span>25</span>
-                      <span>30</span>
-                      <span>35</span>
-                      <span>40</span>
-                      <span>45</span>
-                    </div>
-                  </div><!--x-->
-
-                </div><!--route-graph-->
+                    <div class="route-graph-x-scroll">
+                      <div class="route-graph-x">                    
+                        <div class="route-graph-row">
+                          <div style="width: 12%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 17px;"></span></div>
+                          <div style="width: 13%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 37px;"></span></div>
+                          <div style="width: 18%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 19px;"></span></div>
+                          <div style="width: 16%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 10px;"></span></div>
+                          <div style="width: 4%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 32px;"></span></div>
+                          <div style="width: 14%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 12px;"></span></div>
+                          <div style="width: 11%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 32px;"></span></div>
+                          <div style="width: 18%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 17px;"></span></div>
+                        </div>
+                        <div class="route-x">
+                          <span>5</span>
+                          <span>10</span>
+                          <span>15</span>
+                          <span>20</span>
+                          <span>25</span>
+                          <span>30</span>
+                          <span>35</span>
+                          <span>40</span>
+                          <span>45</span>
+                        </div>
+                      </div><!--x-->
+                    </div><!--route-graph-x-scroll-->
+                  </div><!--route-graph-->
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="desc">
+    <section class="section desc">
       <div class="contain">
         <div class="desc-w">
           <div class="like-h3-c">описание</div>
@@ -232,7 +236,7 @@
         </div>
       </div>
     </section>
-    <section class="photo-route">
+    <section class="section photo-route">
       <div class="contain">
         <div class="photo-route-w">
           <div class="like-h3-c">Фото маршрута</div>
@@ -253,7 +257,7 @@
                 <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_4.jpg" />
               </a>
             </div>
-            <div class="photo-route-col">
+            <div class="photo-route-col photo-route-col-big">
               <a data-fancybox="gallery-1" href="img/photo_5_big.jpg" class="photo-route-img-w-big lazy-bg-w">
                 <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_5_big.jpg" />
               </a>
@@ -265,7 +269,7 @@
     </section>
 
 
-    <section class="rating">
+    <section class="section rating">
       <div class="contain">
         <div class="rating-w">
           <div class="like-h2-wh-c">рейтинг маршрута</div>
@@ -294,7 +298,7 @@
       </div>
     </section>
 
-    <section class="calend">
+    <section class="section calend">
       <div class="contain">
         <div class="calend-w">
           <div class="calend-w-2">
@@ -382,8 +386,8 @@
     <div class="contain contain-big">
       <div class="footer-row-w-1">
         <div class="footer-col footer-col-1">
-          <a href="#" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
-          <a href="#" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
+          <a href="index.html" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
+          <a href="index.html" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
         </div>
         <div class="footer-col footer-col-2">
           <div class="footer-tit">Велосипеды</div>
@@ -489,6 +493,7 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/select2.min.js"></script>
   <script src="js/lazyload.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 

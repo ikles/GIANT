@@ -1500,4 +1500,31 @@ input[type="text"].footer-feed-input {
   .show-320 {
     display: block; } }
 
-/**/
+@media (max-width: 992px) {
+  .section {
+    padding: 60px 0; } }
+
+@media (max-width: 768px) {
+  .like-h2-l,
+  .like-h2-c,
+  .like-h2-wh {
+    font-size: 30px; } }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 50px 0; }
+  .like-h1,
+  .like-h1-c {
+    font-size: 38px; } }
+
+@media (max-width: 570px) {
+  .like-h2-c,
+  .like-h2-l,
+  .like-h2-wh {
+    font-size: 26px; } }
+
+@media (max-width: 480px) {
+  .top-icon {
+    display: none; }
+  .icon-cart {
+    display: block; } }

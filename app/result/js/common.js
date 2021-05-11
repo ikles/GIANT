@@ -118,6 +118,51 @@ if ( $('.slider-container').length ) {
 }
 
 
+if ( $('.club-container').length ) {
+  new Swiper('.club-container', {
+
+    scrollbar: {
+      el: '.swiper-scrollbar',      
+      draggable: true
+    },
+    slidesPerView: 1,    
+    simulateTouch: true,    
+    touchRatio: 2,    
+    touchAngle: 45,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 2, 
+        spaceBetween: 37,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
+      200: {
+        slidesPerView: 1, 
+        spaceBetween: 37,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
+    },
+
+  });
+}
+
+
 
 if ( $('.calendar-it-container').length ) {
   new Swiper('.calendar-it-container', {
@@ -141,13 +186,13 @@ if ( $('.calendar-it-container').length ) {
       clickable: true
     },
     breakpoints: {
-      993: {
+      1367: {
         slidesPerView: 4, 
         spaceBetween: 40,
         loop: true,
       },      
-      769: {   
-        slidesPerView: 4, 
+      1200: {   
+        slidesPerView: 3, 
         spaceBetween: 40,
         loop: false,
         pagination: {
@@ -155,8 +200,17 @@ if ( $('.calendar-it-container').length ) {
           clickable: true
         }
       },      
+      641: {   
+        slidesPerView: 2, 
+        spaceBetween: 40,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
       200: {   
-        slidesPerView: 4, 
+        slidesPerView: 1,
         spaceBetween: 40,
         loop: true,
         pagination: {
@@ -198,16 +252,25 @@ if ( $('.privilege-slider-container').length ) {
         loop: true,
       },      
       769: {   
-        slidesPerView: 4, 
-        spaceBetween: 40,
-        loop: false,
+        slidesPerView: 3, 
+        spaceBetween: 30,
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true
         }
-      },      
+      },
+      641: {   
+        slidesPerView: 2, 
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      },
       200: {   
-        slidesPerView: 4, 
+        slidesPerView: 1, 
         spaceBetween: 40,
         loop: true,
         pagination: {
@@ -221,6 +284,38 @@ if ( $('.privilege-slider-container').length ) {
 }
 
 
+if( $('.route-graph-scroll').length ) {
+
+  if( $(window).width() < 641 ) {
+    $(".route-graph-scroll").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0,
+      scrollInertia: '230'
+    });    
+  }
+
+  if( $(window).width() > 640 ) {
+    $(".route-graph-scroll").mCustomScrollbar("destroy");
+  }
+
+
+  $(window).resize(function() {
+    if( $(window).width() < 641 ) {
+      $(".route-graph-scroll").mCustomScrollbar({
+        axis: "x",
+        theme: "dark-3",
+        mouseWheel: 0,
+        scrollInertia: '230'
+      });
+    }
+    if( $(window).width() > 640 ) {
+      $(".route-graph-scroll").mCustomScrollbar("destroy");
+    }
+  });
+
+
+} //
 
 
   //$("#phone_1").mask("+7 (999) 999-99-99");
@@ -240,22 +335,22 @@ if ( $('.privilege-slider-container').length ) {
     $('body').removeClass('ohi');
   });
 
-if ($('[data-fancybox="gallery-1"]').length) {
+  if ($('[data-fancybox="gallery-1"]').length) {
 
-  $('[data-fancybox="gallery-1"]').fancybox({
-    arrows: true,
-    infobar: false,
-    smallBtn: true,
-    toolbar: false,
-    iframe : {
-      css : {
-        width : '950px'
-      }
-    },    
-    slideClass: "myClass",
-    baseClass: "myclass"
-  });
-}
+    $('[data-fancybox="gallery-1"]').fancybox({
+      arrows: true,
+      infobar: false,
+      smallBtn: true,
+      toolbar: false,
+      iframe : {
+        css : {
+          width : '950px'
+        }
+      },    
+      slideClass: "myClass",
+      baseClass: "myclass"
+    });
+  }
 
 
 

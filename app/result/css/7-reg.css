@@ -657,6 +657,10 @@ textarea.join-textarea {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+  .join-form-r img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .join-form-r-452 {
   height: 452px;
@@ -866,6 +870,59 @@ input[type="text"].fill-form-input-3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -13px; }
+
+@media (max-width: 1366px) {
+  .join-form-l-452 {
+    padding: 20px 30px; }
+  .join-form-r-452 {
+    height: 460px; } }
+
+@media (max-width: 1199px) {
+  .join-form-r-452 {
+    height: 586px; }
+  .join-form-r-452,
+  .join-form-l-452 {
+    width: calc(50% - 10px); } }
+
+@media (max-width: 992px) {
+  .join-form-r-452,
+  .join-form-l-452 {
+    width: 100%; }
+  .reg-section .join-form-w {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .join-form-r-452 .join-form-img {
+    height: 545px; }
+  .join-form-r-452 .join-form-img {
+    height: 100%; } }
+
+@media (max-width: 768px) {
+  .join-form-r-452 .join-form-img {
+    height: 255px; }
+  .join-form-r-452 {
+    height: auto; } }
+
+@media (max-width: 640px) {
+  .fill-forms-row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .fill-forms-row input[type="text"] {
+      width: 100%;
+      margin-bottom: 20px; }
+      .fill-forms-row input[type="text"]:last-child {
+        margin-bottom: 0; } }
+
+@media (max-width: 480px) {
+  .join-form-l-452 {
+    padding: 20px; }
+  .join-ul {
+    width: 100%; }
+  .join-uls-w {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 @media (max-width: 992px) {
   .top-mnu {
@@ -1344,4 +1401,31 @@ input[type="text"].footer-feed-input {
   .show-320 {
     display: block; } }
 
-/**/
+@media (max-width: 992px) {
+  .section {
+    padding: 60px 0; } }
+
+@media (max-width: 768px) {
+  .like-h2-l,
+  .like-h2-c,
+  .like-h2-wh {
+    font-size: 30px; } }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 50px 0; }
+  .like-h1,
+  .like-h1-c {
+    font-size: 38px; } }
+
+@media (max-width: 570px) {
+  .like-h2-c,
+  .like-h2-l,
+  .like-h2-wh {
+    font-size: 26px; } }
+
+@media (max-width: 480px) {
+  .top-icon {
+    display: none; }
+  .icon-cart {
+    display: block; } }

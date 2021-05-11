@@ -9,6 +9,7 @@
   <title>Московские парки</title>
   <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/3-chall-p.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -111,7 +112,7 @@
           </div>
         </div>
       </div>            
-    <section class="route">
+    <section class="section route">
       <div class="contain">
         <div class="route-w">
           <div class="like-h1-c">московские парки</div>
@@ -170,224 +171,265 @@
                   </div>
                 </div><!--3-->
 
-                <div class="route-graph">                  
-                  <div class="route-y">
-                    <span>100</span>
-                    <span>50</span>
-                    <span>0</span>
-                  </div>
-                  <div class="route-graph-x">                    
-                    <div class="route-graph-row">
-                      <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 17px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 33px; margin-bottom: 67px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 70px; margin-bottom: 19px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 10px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 126px; margin-bottom: 32px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 58px; margin-bottom: 52px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 25px; margin-bottom: 32px;"></span></div>
-                      <div class="route-graph-col"><span class="graph-line" style="width: 90px; margin-bottom: 17px;"></span></div>
-                    </div>
-                    <div class="route-x">
-                      <span>5</span>
-                      <span>10</span>
-                      <span>15</span>
-                      <span>20</span>
-                      <span>25</span>
-                      <span>30</span>
-                      <span>35</span>
-                      <span>40</span>
-                      <span>45</span>
-                    </div>
-                  </div><!--x-->
-                  <div class="route-btn-w">
-                    <a href="#" class="btn">Заявить рекорд</a>
-                  </div>
-                </div><!--route-graph-->
 
-              </div>
-            </div>
+
+                <div class="route-graph-scroll">
+                  <div class="route-graph">                  
+                    <div class="route-y">
+                      <span>100</span>
+                      <span>50</span>
+                      <span>0</span>
+                    </div>
+                    <div class="route-graph-x-scroll">
+                      <div class="route-graph-x">                    
+                        <div class="route-graph-row">
+                          <div style="width: 12%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 17px;"></span></div>
+                          <div style="width: 13%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 37px;"></span></div>
+                          <div style="width: 18%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 19px;"></span></div>
+                          <div style="width: 16%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 10px;"></span></div>
+                          <div style="width: 4%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 32px;"></span></div>
+                          <div style="width: 14%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 12px;"></span></div>
+                          <div style="width: 11%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 32px;"></span></div>
+                          <div style="width: 18%;" class="route-graph-col"><span class="graph-line" style="margin-bottom: 17px;"></span></div>
+                        </div>
+                        <div class="route-x">
+                          <span>5</span>
+                          <span>10</span>
+                          <span>15</span>
+                          <span>20</span>
+                          <span>25</span>
+                          <span>30</span>
+                          <span>35</span>
+                          <span>40</span>
+                          <span>45</span>
+                        </div>
+                      </div><!--x-->
+                    </div><!--route-graph-x-scroll-->
+                    <div class="route-btn-w">
+                      <a href="#" class="btn">Заявить рекорд</a>
+                    </div>
+                  </div><!--route-graph-->
+                </div>
+
+
+         <!--        <div class="route-graph">                  
+           <div class="route-y">
+             <span>100</span>
+             <span>50</span>
+             <span>0</span>
+           </div>
+           <div class="route-graph-x">                    
+             <div class="route-graph-row">
+               <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 17px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 33px; margin-bottom: 67px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 70px; margin-bottom: 19px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 42px; margin-bottom: 10px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 126px; margin-bottom: 32px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 58px; margin-bottom: 52px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 25px; margin-bottom: 32px;"></span></div>
+               <div class="route-graph-col"><span class="graph-line" style="width: 90px; margin-bottom: 17px;"></span></div>
+             </div>
+             <div class="route-x">
+               <span>5</span>
+               <span>10</span>
+               <span>15</span>
+               <span>20</span>
+               <span>25</span>
+               <span>30</span>
+               <span>35</span>
+               <span>40</span>
+               <span>45</span>
+             </div>
+           </div>x
+           <div class="route-btn-w">
+             <a href="#" class="btn">Заявить рекорд</a>
+           </div>
+         </div>route-graph -->
+
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+</section>
+<section class="section desc">
+  <div class="contain">
+    <div class="desc-w">
+      <div class="like-h3-c">описание</div>
+      <div class="desc-row">
+        <div class="desc-l">
+          Клуб людей, объединенных страстью к велосипедам и велоспорту. С 2020 года VCC развивается в новом формате. Мы запустили программу привилегий, разработали джерси, дизайн которой будет меняться ежегодно, и ввели пла
+        </div>
+        <div class="desc-r">
+          <p>
+            Клуб людей, объединенных страстью к велосипедам и велоспорту. С 2020 года VCC развивается в новом формате. Мы запустили программу привилегий, разработали джерси, дизайн которой будет меняться ежегодно, и ввели
+            платное членство. Приобретая клубный пакет вы становитесь членом клуба, что позволит вам воспользоваться скидкой на товары и услуги партнёров и проката Velody, а так же принимать участие в закрытых мероприятиях.
+          </p>
+          <p>
+            Приобретая клубный пакет вы становитесь членом клуба, что позволит вам воспользоваться скидкой на товары и услуги партнёров и проката Velody, а так же принимать участие в закрытых мероприятиях. 
+          </p>
+        </div>
+      </div>
+      <div class="btn-desc-w">
+        <a href="#" class="btn btn-desc">Яндекс.Карты</a>
+        <a href="#" class="btn btn-desc">Strava</a>
+        <a href="#" class="btn btn-desc">Скачать GPX</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section photo-route">
+  <div class="contain">
+    <div class="photo-route-w">
+      <div class="like-h3-c">Фото маршрута</div>
+      <div class="photo-route-albom">
+        <div class="photo-route-col">
+          <a data-fancybox="gallery-1" href="img/photo_1.jpg" class="photo-route-img-w lazy-bg-w">
+            <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_1.jpg" />
+          </a>
+          <a data-fancybox="gallery-1" href="img/photo_3.jpg" class="photo-route-img-w lazy-bg-w">
+            <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_3.jpg" />
+          </a>
+        </div>
+        <div class="photo-route-col">
+          <a data-fancybox="gallery-1" href="img/photo_2.jpg" class="photo-route-img-w lazy-bg-w">
+            <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_2.jpg" />
+          </a>
+          <a data-fancybox="gallery-1" href="img/photo_4.jpg" class="photo-route-img-w lazy-bg-w">
+            <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_4.jpg" />
+          </a>
+        </div>
+        <div class="photo-route-col photo-route-col-big">
+          <a data-fancybox="gallery-1" href="img/photo_5_big.jpg" class="photo-route-img-w-big lazy-bg-w">
+            <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_5_big.jpg" />
+          </a>
+        </div>
+      </div>
+      <div class="btn-more-photo-w"><a href="#" class="btn">Больше фотографий</a></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section rating">
+  <div class="contain">
+    <div class="rating-w">
+      <div class="like-h2-wh-c">рейтинг маршрута</div>
+      <div class="rating-eva-w">
+        <div class="rating-eva">Всего оценок:<span class="rating-eva-span">9</span></div>
+        <div class="rating-eva-point"></div>
+        <div class="rating-eva">Средняя оценка:<span class="rating-eva-span">3</span></div>
+      </div>
+      <div class="rating-star-w">
+        <div class="rating-star">
+          <div class="rating-star-it">
+            <div class="rating-star-it-txt">Сложность</div>
+            <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-gr-a"></a></div>
+          </div>
+          <div class="rating-star-it rating-star-it-2">
+            <div class="rating-star-it-txt">Зрелищность</div>
+            <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a></div>
+          </div>
+          <div class="rating-star-it">
+            <div class="rating-star-it-txt">Покрытие</div>
+            <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-gr-a"></a><a href="#" class="rating-star-gr-a"></a></div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="desc">
-      <div class="contain">
-        <div class="desc-w">
-          <div class="like-h3-c">описание</div>
-          <div class="desc-row">
-            <div class="desc-l">
-              Клуб людей, объединенных страстью к велосипедам и велоспорту. С 2020 года VCC развивается в новом формате. Мы запустили программу привилегий, разработали джерси, дизайн которой будет меняться ежегодно, и ввели пла
-            </div>
-            <div class="desc-r">
-              <p>
-                Клуб людей, объединенных страстью к велосипедам и велоспорту. С 2020 года VCC развивается в новом формате. Мы запустили программу привилегий, разработали джерси, дизайн которой будет меняться ежегодно, и ввели
-                платное членство. Приобретая клубный пакет вы становитесь членом клуба, что позволит вам воспользоваться скидкой на товары и услуги партнёров и проката Velody, а так же принимать участие в закрытых мероприятиях.
-              </p>
-              <p>
-                Приобретая клубный пакет вы становитесь членом клуба, что позволит вам воспользоваться скидкой на товары и услуги партнёров и проката Velody, а так же принимать участие в закрытых мероприятиях. 
-              </p>
-            </div>
-          </div>
-          <div class="btn-desc-w">
-            <a href="#" class="btn btn-desc">Яндекс.Карты</a>
-            <a href="#" class="btn btn-desc">Strava</a>
-            <a href="#" class="btn btn-desc">Скачать GPX</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="photo-route">
-      <div class="contain">
-        <div class="photo-route-w">
-          <div class="like-h3-c">Фото маршрута</div>
-          <div class="photo-route-albom">
-            <div class="photo-route-col">
-              <a data-fancybox="gallery-1" href="img/photo_1.jpg" class="photo-route-img-w lazy-bg-w">
-                <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_1.jpg" />
-              </a>
-              <a data-fancybox="gallery-1" href="img/photo_3.jpg" class="photo-route-img-w lazy-bg-w">
-                <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_3.jpg" />
-              </a>
-            </div>
-            <div class="photo-route-col">
-              <a data-fancybox="gallery-1" href="img/photo_2.jpg" class="photo-route-img-w lazy-bg-w">
-                <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_2.jpg" />
-              </a>
-              <a data-fancybox="gallery-1" href="img/photo_4.jpg" class="photo-route-img-w lazy-bg-w">
-                <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_4.jpg" />
-              </a>
-            </div>
-            <div class="photo-route-col">
-              <a data-fancybox="gallery-1" href="img/photo_5_big.jpg" class="photo-route-img-w-big lazy-bg-w">
-                <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/photo_5_big.jpg" />
-              </a>
-            </div>
-          </div>
-          <div class="btn-more-photo-w"><a href="#" class="btn">Больше фотографий</a></div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-
-    <section class="rating">
-      <div class="contain">
-        <div class="rating-w">
-          <div class="like-h2-wh-c">рейтинг маршрута</div>
-          <div class="rating-eva-w">
-            <div class="rating-eva">Всего оценок:<span class="rating-eva-span">9</span></div>
-            <div class="rating-eva-point"></div>
-            <div class="rating-eva">Средняя оценка:<span class="rating-eva-span">3</span></div>
+<section class="section calend">
+  <div class="contain">
+    <div class="calend-w">
+      <div class="calend-w-2">
+        <div class="like-h2-c">комментарии</div>
+        <form class="calend-form">
+          <textarea class="calend-textarea" placeholder="Ваш комментарий"></textarea>
+          <div class="calend-btn-w">
+            <button href="#" class="btn">Написать</button>
           </div>
-          <div class="rating-star-w">
-            <div class="rating-star">
-              <div class="rating-star-it">
-                <div class="rating-star-it-txt">Сложность</div>
-                <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-gr-a"></a></div>
-              </div>
-              <div class="rating-star-it rating-star-it-2">
-                <div class="rating-star-it-txt">Зрелищность</div>
-                <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a></div>
-              </div>
-              <div class="rating-star-it">
-                <div class="rating-star-it-txt">Покрытие</div>
-                <div class="rating-star-it-row"><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-yell-a"></a><a href="#" class="rating-star-gr-a"></a><a href="#" class="rating-star-gr-a"></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </form>            
+        <div class="calend-com-w">
+          <div class="calend-txt-1">комментарии участников</div>
+          <div class="calend-com-review-w">
 
-    <section class="calend">
-      <div class="contain">
-        <div class="calend-w">
-          <div class="calend-w-2">
-            <div class="like-h2-c">комментарии</div>
-            <form class="calend-form">
-              <textarea class="calend-textarea" placeholder="Ваш комментарий"></textarea>
-              <div class="calend-btn-w">
-                <button href="#" class="btn">Написать</button>
-              </div>
-            </form>            
-            <div class="calend-com-w">
-              <div class="calend-txt-1">комментарии участников</div>
-              <div class="calend-com-review-w">
-
-                <div class="calend-com-review-item">
-                  <div class="calend-com-review">
-                    <div class="calend-com-partic">
-                      <div class="calend-partic-ava lazy-bg-w">
-                        <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-1.jpg">
-                      </div>
-                      <div class="calend-partic-txt-1">Алексей, 45 лет</div>
-                      <div class="calend-partic-txt-2">Тула, строитель</div>
-                      <div class="calend-partic-img-w">
-                        <img src="img/medal.png" />
-                      </div>
-                    </div>
-                    <div class="calend-review">
-                      <div class="calend-review-txt">
-                        С весны 2016 года я стал счастливым обладателем велосипеда Giant, и конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было бы полезно.
-                      </div>
-                      <a href="#" class="calend-review-btn">Ответить</a>
-                    </div>
+            <div class="calend-com-review-item">
+              <div class="calend-com-review">
+                <div class="calend-com-partic">
+                  <div class="calend-partic-ava lazy-bg-w">
+                    <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-1.jpg">
                   </div>
-                  <div class="calend-com-review calend-com-review-reverse">
-                    <div class="calend-review calend-review-reverse">
-                      <div class="calend-review-txt-2">Ответ Алексею:</div>
-                      <div class="calend-review-txt">
-                        Конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было бы
-                        полезно. Конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было
-                        бы полезно.
-                      </div>
-                    </div>
-                    <div class="calend-com-partic">
-                      <div class="calend-partic-ava lazy-bg-w">
-                        <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-2.jpg">
-                      </div>
-                      <div class="calend-partic-txt-1">Вы</div>
-                      <div class="calend-partic-txt-2">Москва, менеджер</div>
-                      <div class="calend-partic-img-w"><img src="img/medal.png" /></div>
-                    </div>
+                  <div class="calend-partic-txt-1">Алексей, 45 лет</div>
+                  <div class="calend-partic-txt-2">Тула, строитель</div>
+                  <div class="calend-partic-img-w">
+                    <img src="img/medal.png" />
                   </div>
-                </div><!--calend-com-review-item-->
-
-                <div class="calend-com-review-item">
-                  <div class="calend-com-review">
-                    <div class="calend-com-partic">
-                      <div class="calend-partic-ava lazy-bg-w">
-                        <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-3.jpg">
-                      </div>
-                      <div class="calend-partic-txt-1">владимир, 27 лет</div>
-                      <div class="calend-partic-txt-2">Москва, госслужащий</div>
-                      <div class="calend-partic-img-w"><img src="img/medal.png" /></div>
-                    </div>
-                    <div class="calend-review">
-                      <div class="calend-review-txt">
-                        Очень круто, что Expert из коробки на сто процентов готов к гонке — взял, собрал за <br />
-                        сорок минут и поехал, к примеру на этап EWS. Небольшие замены железа скорее личные заморочки, нежели необходимость.
-                      </div>
-                      <a href="#" class="calend-review-btn">Ответить</a>
-                    </div>
+                </div>
+                <div class="calend-review">
+                  <div class="calend-review-txt">
+                    С весны 2016 года я стал счастливым обладателем велосипеда Giant, и конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было бы полезно.
                   </div>
-                </div><!--calend-com-review-item-->
+                  <a href="#" class="calend-review-btn">Ответить</a>
+                </div>
               </div>
-            </div>
+              <div class="calend-com-review calend-com-review-reverse">
+                <div class="calend-review calend-review-reverse">
+                  <div class="calend-review-txt-2">Ответ Алексею:</div>
+                  <div class="calend-review-txt">
+                    Конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было бы
+                    полезно. Конечно я мог бы просто рассказать про него какой он хороший, как он едет вниз, вверх и по плоскачу, это было бы вполне в рамках стандартных обзоров и отчетов, даже наверняка это кому-нибудь было
+                    бы полезно.
+                  </div>
+                </div>
+                <div class="calend-com-partic">
+                  <div class="calend-partic-ava lazy-bg-w">
+                    <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-2.jpg">
+                  </div>
+                  <div class="calend-partic-txt-1">Вы</div>
+                  <div class="calend-partic-txt-2">Москва, менеджер</div>
+                  <div class="calend-partic-img-w"><img src="img/medal.png" /></div>
+                </div>
+              </div>
+            </div><!--calend-com-review-item-->
+
+            <div class="calend-com-review-item">
+              <div class="calend-com-review">
+                <div class="calend-com-partic">
+                  <div class="calend-partic-ava lazy-bg-w">
+                    <img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/comm-3.jpg">
+                  </div>
+                  <div class="calend-partic-txt-1">владимир, 27 лет</div>
+                  <div class="calend-partic-txt-2">Москва, госслужащий</div>
+                  <div class="calend-partic-img-w"><img src="img/medal.png" /></div>
+                </div>
+                <div class="calend-review">
+                  <div class="calend-review-txt">
+                    Очень круто, что Expert из коробки на сто процентов готов к гонке — взял, собрал за <br />
+                    сорок минут и поехал, к примеру на этап EWS. Небольшие замены железа скорее личные заморочки, нежели необходимость.
+                  </div>
+                  <a href="#" class="calend-review-btn">Ответить</a>
+                </div>
+              </div>
+            </div><!--calend-com-review-item-->
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
 
 
 
-    <div class="footer">
+<div class="footer">
   <div class="footer-row-1">
     <div class="contain contain-big">
       <div class="footer-row-w-1">
         <div class="footer-col footer-col-1">
-          <a href="#" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
-          <a href="#" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
+          <a href="index.html" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
+          <a href="index.html" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
         </div>
         <div class="footer-col footer-col-2">
           <div class="footer-tit">Велосипеды</div>
@@ -487,13 +529,14 @@
 </div>
 
 
-  </div>
-  <!--wrapper-->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script src="js/lazyload.js"></script>
-  <script src="js/common.js"></script>
+</div>
+<!--wrapper-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/lazyload.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 
 </html>
