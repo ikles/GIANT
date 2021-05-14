@@ -6,8 +6,8 @@ $(document).ready(function(){
 });
 
 // Examples with ajax requests
-function initStoresMap() {initMap('stores-map', [55.76, 37.64], 11, '/js/stores.json');}
-function initPickupMap() {initMap('pickup-map', [55.831903, 37.411961], 11, '/js/stores2.json');}
+function initStoresMap() {initMap('stores-map', [55.76, 37.64], 11, 'js/stores.json');}
+function initPickupMap() {initMap('pickup-map', [55.831903, 37.411961], 11, 'js/stores2.json');}
 
 // Examples without ajax requests
 function initMoscowOfficeMap() {

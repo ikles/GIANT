@@ -112,7 +112,7 @@ section {
   background-image: linear-gradient(90deg, #06068f 0%, #00ebf0 100%);
   font-size: 16px;
   font-weight: 600;
-  color: white;
+  color: #ffffff;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -120,9 +120,13 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 60px;
-  padding-right: 60px; }
+  padding-right: 60px;
+  opacity: 1; }
   .btn:hover {
-    text-decoration: none; }
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: .75;
+    background-color: #0c69a7; }
 
 .select2-container {
   width: auto !important; }
@@ -236,6 +240,10 @@ section {
 .lazy-bg-w {
   background: #fff url("../img/metaball-loader-2.gif") no-repeat center;
   background-size: 90px; }
+
+@media (max-width: 992px) {
+  .swiper-button {
+    transition: unset; } }
 
 /*********************/
 /*********************/

@@ -956,12 +956,27 @@ textarea.calend-textarea {
     padding: 30px;
   }
   .calend-review:before {
-    display: none;
+    transform: rotate(90deg);
+    left: 0;
+    top: -44px;
   }
-  .calend-com-review-reverse .calend-com-partic {
-    margin-left: 0;
-    order: -1;
+  .calend-com-review-reverse {
+    .calend-com-partic {
+      margin-left: 0;
+      order: -1;
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      display: flex;    
+      flex-direction: column;    
+      align-items: flex-end;
+      width: 100%;
+    }
+    .calend-review:before {
+      right: 0;
+    }
   }
+
+
 }
 
 @import "_mnu.scss";

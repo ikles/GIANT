@@ -260,6 +260,17 @@
   .top-link {
     font-size: 12px;
   }
+  .top-link-w {
+   display: none; 
+  }
+  .col-mnu {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  .icon-cart {
+    margin-left: 0;
+    height: 30px;    
+  }
 }
 
 @media (max-width : 375px) {

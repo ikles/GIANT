@@ -172,16 +172,38 @@ $ff2: 'RideLife', sans-serif;
   margin-bottom: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  img {
+    transition: transform .4s cubic-bezier(0.215,0.61,0.355,1);
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
 }
 
 .filtr-card-img-w {
   height: 260px;
   width: 100%;
   overflow: hidden;
+  display: block;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+   &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    transition: 0.9s;
   }
 }
 
@@ -199,8 +221,7 @@ $ff2: 'RideLife', sans-serif;
 
 .filtr-card-img-w-2 {
   display: flex;  
-  justify-content: center;
-
+  justify-content: center;  
   align-items: center;
   img {
     width: auto;
@@ -208,6 +229,7 @@ $ff2: 'RideLife', sans-serif;
     object-fit: unset;
     max-width: 80%;
   }
+
 }
 
 
@@ -258,16 +280,17 @@ $ff2: 'RideLife', sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #000000;
+  display: block;
 }
 
 .filtr-card-txt-2 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   color: #000000;
 }
 
 .filtr-card-txt-2 {
-  color: #999;
+
 }
 
 .filtr-card-param {
@@ -304,6 +327,7 @@ $ff2: 'RideLife', sans-serif;
   text-transform: none;
   color: rgb(0, 0, 0);
   text-align: center;
+  font-weight: 400;
 }
 
 .filtr-card-param-it-2 {
@@ -353,6 +377,15 @@ $ff2: 'RideLife', sans-serif;
     width: 546px;
     height: 307px;
   }
+  .filtr-card-it {
+    width: calc(50% - 40px);
+  }  
+
+  .vid-adv-play {
+    width: 80px;
+    height: 80px;
+    background-size: 20px;
+  }
 }
 @media only screen and (max-width : 1199px) {
 
@@ -367,13 +400,10 @@ $ff2: 'RideLife', sans-serif;
     width: 465px;
   }
   .filtr-card-w {
-    margin-left: 0;
-    margin-right: 0;
+
   }
-  .filtr-card-it {
-    margin-left: 0;
-    margin-right: 0;
-    width: calc(50% - 20px);
+  .filtr-card-it {    
+    width: calc(50% - 40px);
   }
 }
 
@@ -397,7 +427,9 @@ $ff2: 'RideLife', sans-serif;
     margin-bottom: 22px;
   }
   .filtr-card-it {
-    width: calc(50% - 10px);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(50% - 20px);
   }
   .filtr-card-param-it-2 {
     width: 74px;
@@ -411,17 +443,37 @@ $ff2: 'RideLife', sans-serif;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .filtr-card-w {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .filtr-card-info {
+    padding: 30px 20px;
+  }
   .filtr-card-it {
     width: 100%; 
+    margin-left: 0;
+    margin-right: 0;
   }
   .filtr-card-param-it-2 {
     width: 100px;
+  }  
+  .filtr-card-product {
+    display: none;
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: block;
+    }
   }
 }      
 
 
 @media only screen and (max-width : 640px) {
-  /**/ 
+  /**/
 } 
 
 @media only screen and (max-width : 570px) {
@@ -471,6 +523,9 @@ $ff2: 'RideLife', sans-serif;
   }
   .filtr-card-param-it-2 {
     width: 74px;
+  }
+  .filtr-choice .select2-container {
+    width: 100% !important;
   }
 }
 
