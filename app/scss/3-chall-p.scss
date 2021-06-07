@@ -458,7 +458,7 @@ $ff2: 'RideLife', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 48px;
+  margin-bottom: 0px;
 }
 
 .rating-eva {
@@ -522,6 +522,16 @@ $ff2: 'RideLife', sans-serif;
   margin-top: 17px;
   display: flex;
   justify-content: center;
+}
+
+.sr-rating {
+ display: flex; 
+ justify-content: center; 
+ margin-bottom: 25px;
+ .rating-star-it {
+   text-align: center;
+   width: 100%;
+ }
 }
 
 .rating-star-yell-a {
@@ -763,6 +773,15 @@ textarea.calend-textarea {
   }
   .route-graph-x {
     width: 461px;
+    width: 510px;
+  }
+  .route-r {
+    width: 656px;
+  }
+  .route-l {
+    flex-grow: 1; 
+
+    margin-right: 30px;
   }
 }
 @media (max-width : 1199px) {
@@ -776,6 +795,7 @@ textarea.calend-textarea {
   .route-l {
     height: 350px;
     margin-bottom: 25px;
+    margin-right: 0;
   }
   .route-graph {    
     justify-content: flex-start;
@@ -798,9 +818,11 @@ textarea.calend-textarea {
   }
   .route-graph-x {
     width: 430px;
+    width: 510px;
   }
   .route-x span {
     margin-right: 36px;
+    margin-right: 40px;
   }
   .desc-row {    
     flex-wrap: wrap;
@@ -813,28 +835,6 @@ textarea.calend-textarea {
   .desc-r {
     width: 100%;
     margin-right: 0;
-  }
-}
-
-@media (max-width : 640px) {
-
-  .route-graph {
-    padding-left: 0;
-  }
-  .route-r {
-    padding: 30px;
-  }
-  .photo-route-img-w-big {
-    height: 394px;
-  }
-  .photo-route-img-w {
-    height: calc(50% - 10px);
-  }
-  .route-graph {
-    width: 575px;
-  }
-  .route-graph-x {
-    width: 550px;
   }
   .route-graph-scroll {    
     overflow: auto;
@@ -864,6 +864,31 @@ textarea.calend-textarea {
   .route-info-2 .route-r {
     padding: 30px;
   }
+  .route-graph {
+    padding-left: 0;
+  }
+  .route-r {
+    padding: 30px;
+  }
+  .photo-route-img-w-big {
+    height: 394px;
+  }
+  .photo-route-img-w {
+    height: calc(50% - 10px);
+  }
+  .route-graph {
+    width: 575px;
+  }
+  .route-graph-x {
+    width: 550px;
+    width: 510px;
+  }
+}
+
+@media (max-width : 640px) {
+
+
+
 }
 
 @media (max-width : 570px) {

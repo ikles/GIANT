@@ -156,7 +156,7 @@ function initMap(containerId, centerCoordinates, zoom, jsonUrl, jsonContent) {
         clusterDisableClickZoom: true
     });
 
-    var giantPlacemarkLayout = ymaps.templateLayoutFactory.createClass('<svg class="giant-map-placemark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 40" width="28" height="40"><circle fill="#ffffff" class="cls-1" cx="14" cy="14" r="6"/><path fill="#0e78bf" d="M14,0A14,14,0,0,0,0,14C0,24.5,14,40,14,40S28,24.5,28,14A14,14,0,0,0,14,0Zm0,19a5,5,0,1,1,5-5A5,5,0,0,1,14,19Z"/></svg>');
+    var giantPlacemarkLayout = ymaps.templateLayoutFactory.createClass('<svg class="giant-map-placemark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 40" width="28" height="40"><circle fill="#ffffff" class="cls-1" cx="14" cy="14" r="6"/><path fill="#06038d" d="M14,0A14,14,0,0,0,0,14C0,24.5,14,40,14,40S28,24.5,28,14A14,14,0,0,0,14,0Zm0,19a5,5,0,1,1,5-5A5,5,0,0,1,14,19Z"/></svg>');
 
     // Создание макета балуна на основе Twitter Bootstrap.
     var giantBalloonLayout = ymaps.templateLayoutFactory.createClass(

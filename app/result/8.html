@@ -70,7 +70,18 @@
                   </svg>
                 </a>
               </div>
-            </div>
+
+              <div class="top-search-w">
+                <form>
+                  <input type="text" placeholder="Введите ваш поисковый запрос..." autocomplete="off" autofocus />
+                  <button>
+                    <span class="icon-sear"></span>
+                    <span>Найти</span>
+                  </button>
+                </form>
+              </div><!--top-search-w-->              
+
+            </div><!--top-2-w-->
           </div>
         </div>
 
@@ -88,7 +99,14 @@
 
               <ul class="top-3-ul">
                 <li class="top-3-li"><a href="#" class="top-3-a">О клубе</a></li>
-                <li class="top-3-li"><a href="#" class="top-3-a par">Мероприятия<span class="span-par"></span></a></li>
+                <li class="top-3-li par">
+                  <a href="#" class="top-3-a">Мероприятия<span class="span-par"></span></a>
+                  <ul class="top-3-ul-inn">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                  </ul>
+                </li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Участники</a></li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Партнеры</a></li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Вступить в клуб</a></li>
@@ -102,7 +120,13 @@
             <div class="top-3-w">
               <ul class="top-3-ul">
                 <li class="top-3-li"><a href="#" class="top-3-a">О клубе</a></li>
-                <li class="top-3-li"><a href="#" class="top-3-a par">Мероприятия<span class="span-par"></span></a></li>
+                <li class="top-3-li par"><a href="#" class="top-3-a ">Мероприятия<span class="span-par"></span></a>
+                  <ul class="top-3-ul-inn">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                  </ul>
+                </li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Участники</a></li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Партнеры</a></li>
                 <li class="top-3-li"><a href="#" class="top-3-a">Вступить в клуб</a></li>
@@ -116,7 +140,8 @@
       <div class="contain">
         <div class="test-dr-w">
           <div class="like-h1-c">тест-драйв</div>
-          <div class="test-dr-row"><a href="#" class="test-dr-l lazy-bg-w"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/test_dr.jpg"></a>
+          <div class="test-dr-row">
+            <a data-fancybox="gallery-2" href="img/test_dr.jpg" class="test-dr-l lazy-bg-w"><img alt="image" title="image" class="lazy" src="img/pixel.gif" data-src="img/test_dr.jpg"></a>
             <div class="test-dr-r">
               <div class="test-dr-info">
                 <div class="test-dr-txt-1">ВЕЛОСИПЕД GIANT EXPLORE E+ 1 GTS</div>
@@ -238,8 +263,10 @@
     <div class="contain contain-big">
       <div class="footer-row-w-1">
         <div class="footer-col footer-col-1">
-          <a href="index.html" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
-          <a href="index.html" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
+          <div data-da=".footer-row-w-1,480,first" class="f-logos">
+            <a href="index.html" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
+            <a href="index.html" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
+          </div><!--f-logos-->
         </div>
         <div class="footer-col footer-col-2">
           <div class="footer-tit">Велосипеды</div>
@@ -257,8 +284,8 @@
             <li class="footer-li"><a href="#" class="footer-a">Components</a></li>
           </ul>
         </div>
-        <div class="footer-col footer-col-3">
-          <div class="footer-tit">gian</div>
+        <div data-da=".footer-col-1,992,last" class="footer-col footer-col-3">
+          <div class="footer-tit">giant</div>
           <ul class="footer-ul">
             <li class="footer-li"><a href="#" class="footer-a">О бренде</a></li>
             <li class="footer-li"><a href="#" class="footer-a">Где купить</a></li>
@@ -294,18 +321,20 @@
           </div>
         </div>
         <div class="footer-col footer-col-5">
-          <div class="adress-it-1">
-            <div class="adress-tit">Фирменный магазин GIANT</div>
-            <div class="adress-text">
-              115230, Москва<br />
-              Каширское шоссе 19, к.1<br />
-              +7 (495) 730-46-36
+          <div class="adress-its">
+            <div class="adress-it-1">
+              <div class="adress-tit">Фирменный магазин GIANT</div>
+              <div class="adress-text">
+                115230, Москва<br />
+                Каширское шоссе 19, к.1<br />
+                +7 (495) 730-46-36
+              </div>
+            </div><!--adress-it-1-->
+            <div class="adress-it-2">
+              <div class="adress-tit">Режим работы:</div>
+              <div class="adress-text">Пн-Пт 9:00-21:00</div>
             </div>
-          </div><!--adress-it-1-->
-          <div class="adress-it-2">
-          <div class="adress-tit">Режим работы:</div>
-          <div class="adress-text">Пн-Пт 9:00-21:00</div>
-        </div>
+          </div><!--adress-its-->
           <div class="adress-w">
             <div class="adress-tit">
               Официальный дистрибьютор GIANT<br />
@@ -339,14 +368,27 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+<div class="overlay"></div>
+<script src="js/dinadapt.js"></script>
+
     </div>
     <!--wrapper-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/select2.min.js"></script>
-    <script src="js/lazyload.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=4868c4fc-0500-4b04-ac60-2226520bdcbc&lang=ru_RU"></script>
+    <script src="js/lazyload.js"></script>    
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=4868c4fc-0500-4b04-ac60-2226520bdcbc&lang=ru_RU"></script>
     <script src="js/map-stores.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 

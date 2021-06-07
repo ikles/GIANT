@@ -52,9 +52,143 @@ body {
   width: 1800px;  
 }
 
+.giant-map-balloon__inner {
+  padding: 35px 0 35px 38px;
+  margin-right: 38px;
+}
+
+.giant-map-balloon {    
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  position: absolute;    
+  box-shadow: 0 0 24px rgba(#000, 0.2);
+}
+
+ymaps, ymaps canvas, ymaps input, ymaps svg {
+  max-width: none;
+  max-height: none;
+}
+
+.giant-map-balloon__close {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  opacity: .3;
+  transition: opacity .24s;
+}
+
+.giant-map-balloon__arrow {
+  display: block;
+  left: -10px;
+  top: 34px;
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  border-right: 10px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.join-form-btn {
+  margin-top: 35px;
+}
+
 section {
   padding: 100px 0;
 }
+
+
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 11;
+  background-color: rgba(34, 34, 34, 0.9);
+  display: none;
+  display: block;
+}
+
+.modal-overlay .modal-form__layout {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.modal-overlay .modal-form__block {
+  position: absolute;
+  top: 10px;
+  background-color: #FFF;
+  padding: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 6;
+  max-width: 630px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.zayavka {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.zayavka-1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.zayavka-2 {
+  margin-top: 25px;
+  color: #5c2f1c;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pop-close {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 7;
+  background: url("../img/close.svg") $nr 0 0;  
+  background-size: 24px;
+}
+
 
 .like-h2-l {
   font-size: 36px;
@@ -155,15 +289,79 @@ section {
   }
 }
 
+.giant-map-geolocation {
+ display: none !important; 
+}
+
+
+
+.giant-map-zoom {
+  width: 32px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(#999, 60%);
+}
+
+
+.giant-map-zoom__btn {
+  display: block;
+  position: relative;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 34px;
+  cursor: pointer;
+}
+
+.giant-map-zoom__up {
+  height: 36px;
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.giant-map-zoom__btn:before {
+  width: 12px;
+  height: 2px;
+}
+
+.giant-map-zoom__btn:after {
+  height: 12px;
+  width: 2px;
+}
+
+.giant-map-zoom__btn:before, .giant-map-zoom__btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #666;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: background-color .24s;
+}
+
+.giant-map-zoom__btn.giant-map-zoom__down {
+  &:after {
+    display: none;
+  }
+}
+
 
 .select2-container {  
   width: auto !important;
+  outline: none;
+  border: none;
   .select2-selection--single {    
+    border: none;
+    outline: none;
     height: 40px;
     display: flex;    
     align-items: center;
-    border-radius: 0;
-    border: none;    
+    border-radius: 0;    
     justify-content: space-between;
     .select2-selection__arrow {
 
@@ -290,12 +488,153 @@ section {
 }
 
 
-@media (max-width : 992px) {
-  .swiper-button {    
-      transition: unset;
+.fill-forms {
+  margin-top: 38px;
+  margin-bottom: 30px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fill-forms-row {
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 20px;  
+  flex-wrap: wrap;
+}
+
+input[type="text"].fill-form-input {
+  width: 240px;
+  width: calc(33.333% - 40px / 3);
+  height: 50px;
+  border: 1px solid rgb(216, 218, 221);
+  display: flex;
+  align-items: center;            
+  text-align: center;  
+  text-align: left;
+  padding: 0 25px;
+}
+
+input[type="text"].fill-form-input-2 {  
+  width: calc(50% - 10px);
+  height: 50px;
+  border: 1px solid rgb(216, 218, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+  text-align: left;
+  padding: 0 25px;
+}
+
+input[type="text"].fill-form-input-3 {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(216, 218, 221);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+  text-align: left;
+  padding: 0 25px;
+}
+
+input[type="text"].fill-form-input-w100 {
+  width: 100%;
+  margin-bottom: 20px;  
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
+.fill-form-cons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 53px;
+}
+
+.fill-form-lab-check {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.fill-form-lab-span-bl {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(14, 120, 191);
+  background-position: center;
+  background-image: url("../img/check_mark.png");
+  background-repeat: no-repeat;
+}
+
+.label-span-txt {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+}
+
+.fill-form-checkbox {
+  margin-bottom: 10px;  
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: none;
+  + span {
+    width: 21px;
+    height: 20px;
+    border: 1px solid #d8dadd;
+    flex: none;
+  }
+  &:checked {
+    + span {
+      background-color: rgb(14, 120, 191);
+      background-position: center;
+      background-image: url("../img/check_mark.png");
+      background-repeat: no-repeat;
+      border-color: rgb(14, 120, 191);
+    }
+  }
+}
+
+.btn-more-photo-w {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -13px;
+}
+
+
+@media (max-width : 992px) {
+  .swiper-button {    
+    transition: unset;
+  }
+}
+
+@media (max-width : 640px) {
+  .fill-forms-row {  
+    flex-wrap: wrap;
+    input[type="text"] {
+      width: 100%;
+      margin-bottom: 20px;      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .modal-overlay {
+    .like-h2-c {
+     text-align: left;
+     font-size: 22px; 
+    }
+  }
+}
 
 /*********************/
 /*********************/

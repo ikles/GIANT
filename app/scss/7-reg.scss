@@ -234,123 +234,19 @@ textarea.join-textarea {
 .like-h2-c {
 }
 
-.fill-forms {
-  margin-top: 38px;
-  margin-bottom: 30px;
-}
 
-.fill-forms-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
 
-input[type="text"].fill-form-input {
-  width: 240px;
-  height: 50px;
-  border: 1px solid rgb(216, 218, 221);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-input[type="text"].fill-form-input-2 {
-  width: 370px;
-  height: 50px;
-  border: 1px solid rgb(216, 218, 221);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-input[type="text"].fill-form-input-3 {
-  width: 760px;
-  height: 50px;
-  border: 1px solid rgb(216, 218, 221);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 .reg-section {
   padding-top: 42px;
   .join-form-w {
     margin-top: 36px;
   }
 }
-.fill-form-cons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 53px;
-}
-
-.fill-form-lab-check {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 
-.fill-form-lab-span-bl {
-  width: 20px;
-  height: 20px;
-  background-color: rgb(14, 120, 191);
-  background-position: center;
-  background-image: url("../img/check_mark.png");
-  background-repeat: no-repeat;
-}
-
-.label-span-txt {
-  font-size: 15px;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
-  margin-left: 10px;
-}
-
-.fill-form-checkbox {
-  margin-bottom: 10px;  
-  background-repeat: no-repeat;
-  background-position: right center;
-  display: none;
-  + span {
-    width: 21px;
-    height: 20px;
-    border: 1px solid #d8dadd;
-    flex: none;
-  }
-  &:checked {
-    + span {
-      background-color: rgb(14, 120, 191);
-      background-position: center;
-      background-image: url("../img/check_mark.png");
-      background-repeat: no-repeat;
-      border-color: rgb(14, 120, 191);
-    }
-  }
-}
 
 
-
-.btn-more-photo-w {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -13px;
-}
 
 
 @media (max-width : 1366px) {
@@ -397,18 +293,7 @@ input[type="text"].fill-form-input-3 {
     height: auto;
   }
 }
-@media (max-width : 640px) {
-  .fill-forms-row {  
-    flex-wrap: wrap;
-    input[type="text"] {
-      width: 100%;
-      margin-bottom: 20px;      
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
+
 
 @media (max-width : 480px) {
   .join-form-l-452 {
@@ -418,7 +303,7 @@ input[type="text"].fill-form-input-3 {
     width: 100%;
   }
   .join-uls-w {    
-            flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 

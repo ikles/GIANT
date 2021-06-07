@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тест-драйв</title>
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/8-test.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="body-test">
+  <div class="wrapper">
+    <div class="header">
+  <div class="top-1">
+    <div class="contain contain-big">
+      <div class="top-1-w">
+        <a href="index.html" class="logo">
+          <img alt="logo" title="logo" src="img/logo-liv.svg" class="logo-img">
+          <span class="logo-txt">LIV COMMITTED</span>
+        </a>
+        <div class="top-link-w"><a href="#" class="top-link">Global Website</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="top-2">
+    <div class="contain contain-big">
+      <div class="top-2-w"><a href="index.html" class="logo-2"><img alt="logo2" title="logo2" src="img/logo.png"></a>
+        <div class="col-mnu">
+          <div class="hidden-mnu">
+            <a href="#" class="toggle-mnu"><span></span></a>
+          </div>          
+          <ul class="top-mnu-ul">
+            <li class="top-mnu-li"><a href="#" class="top-mnu-a">Велосипеды </a></li>
+            <li class="top-mnu-li"><a href="#" class="top-mnu-a">Аксессуары</a></li>
+            <li class="top-mnu-li"><a href="#" class="top-mnu-a">Экипировка</a></li>
+            <li class="top-mnu-li"><a href="#" class="top-mnu-a">Комплектующие</a></li>
+            <li class="top-mnu-li"><a href="#" class="top-mnu-a">GIANT клуб</a></li>
+          </ul>          
+        </div>
+        <div class="top-icons">
+          <a href="#" class="top-icon icon-compare">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20" width="22" height="20">
+              <path fill="#ffffff" d="M13,20H9a.82.82,0,0,1-.81-.82V.82A.82.82,0,0,1,9,0H13a.82.82,0,0,1,.81.82V19.18A.82.82,0,0,1,13,20ZM9.78,18.37h2.44V1.63H9.78Z"></path>
+              <path fill="#ffffff" d="M21.19,20H17.11a.82.82,0,0,1-.81-.82V5.92a.82.82,0,0,1,.81-.82h4.08a.82.82,0,0,1,.81.82V19.18A.82.82,0,0,1,21.19,20Zm-3.26-1.63h2.44V6.73H17.93Z"></path>
+              <path fill="#ffffff" d="M4.89,20H.81A.82.82,0,0,1,0,19.18V11a.82.82,0,0,1,.81-.82H4.89A.82.82,0,0,1,5.7,11v8.16A.82.82,0,0,1,4.89,20ZM1.63,18.37H4.07V11.84H1.63Z"></path>
+            </svg></a>
+            <a href="#" class="top-icon icon-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="#ffffff" d="M23.69,22.29l-5.92-5.92a10.09,10.09,0,1,0-1.42,1.41l5.93,5.93a1,1,0,0,0,1.41-1.42ZM2,10a8,8,0,1,1,8,8A8,8,0,0,1,2,10Z"></path>
+              </svg></a>
+              <a href="#" class="top-icon icon-login">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                  <path fill="#ffffff" d="M.56,12.16a1,1,0,0,0,1,1H13.82L11,16a1,1,0,0,0,.71,1.71,1,1,0,0,0,.7-.3l4.5-4.52a1,1,0,0,0,0-1.41L12.38,6.91a1,1,0,0,0-1.39,0,1,1,0,0,0,0,1.41l2.83,2.85H1.54A1,1,0,0,0,.56,12.16Z"></path>
+                  <path fill="#ffffff" d="M22.7,7.33a12,12,0,0,0-2.57-3.82A11.93,11.93,0,0,0,11.64,0,12,12,0,0,0,.42,7.76.92.92,0,0,0,1,9a.9.9,0,0,0,.7,0,.93.93,0,0,0,.49-.52A10.15,10.15,0,1,1,6,20.42,10.27,10.27,0,0,1,2.3,16a.92.92,0,1,0-1.7.72,12,12,0,0,0,11,7.3A12,12,0,0,0,22.7,16.67a12.07,12.07,0,0,0,0-9.34Z"></path>
+                </svg></a>
+                <a href="#" class="top-icon icon-cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.33 26" width="29.33" height="26">
+                    <path fill="#ffffff" d="M1,0A1,1,0,0,0,.8,2L3,2.46c1.17,5.6,2.45,11.17,3.68,16.76a1,1,0,0,0,1,.78H25.23a1,1,0,1,0,0-2H8.47L8,16H26.12a1,1,0,0,0,1-.78l2.22-10a1,1,0,0,0-1-1.22H5.38L4.84,1.42A1,1,0,0,0,4.07.65L1.23,0A.69.69,0,0,0,1,0ZM5.82,6H27.09l-1.77,8H7.59Zm6,14.67a2.67,2.67,0,1,0,2.67,2.66A2.67,2.67,0,0,0,11.83,20.67Zm9.34,0a2.67,2.67,0,1,0,2.66,2.66A2.68,2.68,0,0,0,21.17,20.67Zm-9.34,2a.65.65,0,0,1,.67.66.66.66,0,0,1-.67.67.65.65,0,0,1-.66-.67A.64.64,0,0,1,11.83,22.67Zm9.34,0a.64.64,0,0,1,.66.66.65.65,0,0,1-.66.67.66.66,0,0,1-.67-.67A.65.65,0,0,1,21.17,22.67Z"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="top-search-w">
+                <form>
+                  <input type="text" placeholder="Введите ваш поисковый запрос..." autocomplete="off" autofocus />
+                  <button>
+                    <span class="icon-sear"></span>
+                    <span>Найти</span>
+                  </button>
+                </form>
+              </div><!--top-search-w-->              
+
+            </div><!--top-2-w-->
+          </div>
+        </div>
+
+        <div class="top-mnu">
+          <div class="contain">
+            <div class="top-mnu-inn">
+              <ul class="top-mnu-ul top-mnu-ul-2">
+                <li class="top-mnu-li"><a href="#" class="top-mnu-a">Велосипеды </a></li>
+                <li class="top-mnu-li"><a href="#" class="top-mnu-a">Аксессуары</a></li>
+                <li class="top-mnu-li"><a href="#" class="top-mnu-a">Экипировка</a></li>
+                <li class="top-mnu-li"><a href="#" class="top-mnu-a">Комплектующие</a></li>
+                <li class="top-mnu-li"><a href="#" class="top-mnu-a">GIANT клуб</a></li>
+              </ul>
+
+
+              <ul class="top-3-ul">
+                <li class="top-3-li"><a href="#" class="top-3-a">О клубе</a></li>
+                <li class="top-3-li par">
+                  <a href="#" class="top-3-a">Мероприятия<span class="span-par"></span></a>
+                  <ul class="top-3-ul-inn">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                  </ul>
+                </li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Участники</a></li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Партнеры</a></li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Вступить в клуб</a></li>
+              </ul>            
+            </div>
+          </div>
+        </div><!--top-mnu-->
+
+        <div class="top-3">
+          <div class="contain contain-big">
+            <div class="top-3-w">
+              <ul class="top-3-ul">
+                <li class="top-3-li"><a href="#" class="top-3-a">О клубе</a></li>
+                <li class="top-3-li par"><a href="#" class="top-3-a ">Мероприятия<span class="span-par"></span></a>
+                  <ul class="top-3-ul-inn">
+                    <li><a href="#">Пункт 1</a></li>
+                    <li><a href="#">Пункт 2</a></li>
+                    <li><a href="#">Пункт 3</a></li>
+                  </ul>
+                </li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Участники</a></li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Партнеры</a></li>
+                <li class="top-3-li"><a href="#" class="top-3-a">Вступить в клуб</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>            
+
+    
+    <div class="modal-overlay modal-overlay_1">  
+     <div class="modal-form__layout"></div>
+     <div class="modal-form__block">     
+       <div class="zayavka popup popup-1">
+        <a href="#" class="pop-close"></a>
+        <div class="fill-form-w">
+          <div class="like-h2-c">заполните форму</div>
+          <form>
+            <div class="fill-forms">
+              <div class="fill-forms-row">
+                <input class="fill-form-input" type="text" placeholder="Модель вашего Giant *" required/>
+                <input class="fill-form-input" type="text" placeholder="Год выпуска *" required/>
+                <input class="fill-form-input" type="text" placeholder="Номер рамы *" required/>
+              </div>              
+              <div class="fill-forms-row">
+                <input class="fill-form-input-3" type="text" placeholder="ФИО для доставок из интернет-магазина *" required/>
+              </div>
+              <div class="fill-forms-row">
+                <input class="fill-form-input-2" type="text" placeholder="Профессия *" required/>
+                <input class="fill-form-input-2" type="text" placeholder="Ник для отображения на сайте *" required/>
+              </div>              
+              <div class="fill-forms-row"><input class="fill-form-input-3" type="text" placeholder="Адрес *" required/>
+              </div>
+              <div class="fill-forms-row"><input class="fill-form-input-2" type="text" placeholder="Телефон *" required/>
+                <input class="fill-form-input-2" type="text" placeholder="E-mail *" required/></div>
+              </div>
+              <div class="fill-form-cons">
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked />
+                  <span></span>
+                  <span class="label-span-txt">Согласен с политикой обработки персональных данных</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked />
+                  <span></span>
+                  <span class="label-span-txt">Я принимаю и разделяю правила клуба</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked/>
+                  <span></span>
+                  <span class="label-span-txt">Подписаться на рассылку мероприятий</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" />
+                  <span class="fill-form-lab-span-wh"></span>
+                  <span class="label-span-txt">Подписаться на акции\скидки</span>
+                </label>
+              </div>
+              <div class="btn-more-photo-w">
+                <button class="btn">Вступить в клуб</button>
+              </div>
+            </form>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div><!--modal-overlay-->
+
+    <div class="footer">
+  <div class="footer-row-1">
+    <div class="contain contain-big">
+      <div class="footer-row-w-1">
+        <div class="footer-col footer-col-1">
+          <div data-da=".footer-row-w-1,480,first" class="f-logos">
+            <a href="index.html" class="f-logo-1"><img src="img/logo.png" alt="logo-1" title="logo-1" /></a>
+            <a href="index.html" class="f-logo-2"><img src="img/liv_logo_v2.png" alt="logo-2" title="logo-2" /></a>
+          </div><!--f-logos-->
+        </div>
+        <div class="footer-col footer-col-2">
+          <div class="footer-tit">Велосипеды</div>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#" class="footer-a">ON-ROAD</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">X-ROAD</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">OFF-ROAD</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">YOUTH</a></li>
+          </ul>
+          <div class="footer-tit">Аксессуары</div>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#" class="footer-a">Rider Gear</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Bike Gear</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Service Gear</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Components</a></li>
+          </ul>
+        </div>
+        <div data-da=".footer-col-1,992,last" class="footer-col footer-col-3">
+          <div class="footer-tit">giant</div>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#" class="footer-a">О бренде</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Где купить</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Новости</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Оплата и Доставка</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Технологии</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Cкачать каталог</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Контакты</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Условия гарантии</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Конфиденциальность</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Рассрочка и кредит</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-col-4">
+          <div class="footer-tit">giant клуб</div>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="#" class="footer-a">О клубе</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Мероприятия</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Участники</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Партнеры</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Вступить в клуб</a></li>
+            <li class="footer-li"><a href="#" class="footer-a">Правила клуба</a></li>
+          </ul>
+          <div class="footer-feed">
+            <div class="footer-feed-tit">Подписка на рассылку</div>
+            <form class="footer-feed-form"><input class="footer-feed-input" type="text" placeholder="ваш e-mail" />
+              <button href="#" class="footer-feed-btn"></button>
+            </form>
+          </div>
+          <div class="footer-teleg">
+            <div class="footer-teleg-tit">Наш телеграм канал</div>
+            <a href="#" class="teleg-link"><img src="img/teleg.png" alt="teleg" title="teleg" /></a>
+          </div>
+        </div>
+        <div class="footer-col footer-col-5">
+          <div class="adress-its">
+            <div class="adress-it-1">
+              <div class="adress-tit">Фирменный магазин GIANT</div>
+              <div class="adress-text">
+                115230, Москва<br />
+                Каширское шоссе 19, к.1<br />
+                +7 (495) 730-46-36
+              </div>
+            </div><!--adress-it-1-->
+            <div class="adress-it-2">
+              <div class="adress-tit">Режим работы:</div>
+              <div class="adress-text">Пн-Пт 9:00-21:00</div>
+            </div>
+          </div><!--adress-its-->
+          <div class="adress-w">
+            <div class="adress-tit">
+              Официальный дистрибьютор GIANT<br />
+              в России – компания Fitathlon
+            </div>
+            <div class="adress-text">
+              115230, Москва<br />
+              Каширское шоссе 19, к.1<br />
+              +7 (495) 109-55-75<br />
+              info@giant-rus.ru
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-row-2">
+    <div class="contain contain-big">
+      <div class="footer-row-w-2">
+        <div class="copy">2020 © Giant Russia Neotren Giant Manufacturing Co. Ltd</div>
+        <div class="foot-socs">
+          <a href="#" class="foot-soc"><img alt="image" title="image" src="img/fb.png" /></a>
+          <a href="#" class="foot-soc"><img alt="image" title="image" src="img/inst.png" /></a>
+          <a href="#" class="foot-soc"><img alt="image" title="image" src="img/inst.png" /></a>
+          <a href="#" class="foot-soc"><img alt="image" title="image" src="img/vk.png" /></a>
+          <a href="#" class="foot-soc"><img alt="image" title="image" src="img/youtube.png" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="overlay"></div>
+<script src="js/dinadapt.js"></script>
+
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/lazyload.js"></script>    
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=4868c4fc-0500-4b04-ac60-2226520bdcbc&lang=ru_RU"></script>
+  <script src="js/map-stores.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

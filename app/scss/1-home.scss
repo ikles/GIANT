@@ -1064,8 +1064,8 @@ textarea.join-textarea {
   flex-direction: column;
 }
 
-.join-form-img {
-  height: 545px;
+.join-form-img {  
+  height: 100%;
   flex: 0 0 auto;
   overflow: hidden;
   img {
@@ -1150,6 +1150,9 @@ textarea.join-textarea {
       z-index: 2;
       background-color: #F7F7F7;
     }
+  }
+  .privilege-txt-2 {
+    max-width: 160px;
   }
 }
 @media (max-width : 1199px) {

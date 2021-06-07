@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тест-драйв</title>
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/8-test.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="body-test">
+  <div class="wrapper">
+    @@include('var/_header.html')
+
+    
+    <div class="modal-overlay modal-overlay_1">  
+     <div class="modal-form__layout"></div>
+     <div class="modal-form__block">     
+       <div class="zayavka popup popup-1">
+        <a href="#" class="pop-close"></a>
+        <div class="fill-form-w">
+          <div class="like-h2-c">заполните форму</div>
+          <form>
+            <div class="fill-forms">
+              <div class="fill-forms-row">
+                <input class="fill-form-input" type="text" placeholder="Модель вашего Giant *" required/>
+                <input class="fill-form-input" type="text" placeholder="Год выпуска *" required/>
+                <input class="fill-form-input" type="text" placeholder="Номер рамы *" required/>
+              </div>              
+              <div class="fill-forms-row">
+                <input class="fill-form-input-3" type="text" placeholder="ФИО для доставок из интернет-магазина *" required/>
+              </div>
+              <div class="fill-forms-row">
+                <input class="fill-form-input-2" type="text" placeholder="Профессия *" required/>
+                <input class="fill-form-input-2" type="text" placeholder="Ник для отображения на сайте *" required/>
+              </div>              
+              <div class="fill-forms-row"><input class="fill-form-input-3" type="text" placeholder="Адрес *" required/>
+              </div>
+              <div class="fill-forms-row"><input class="fill-form-input-2" type="text" placeholder="Телефон *" required/>
+                <input class="fill-form-input-2" type="text" placeholder="E-mail *" required/></div>
+              </div>
+              <div class="fill-form-cons">
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked />
+                  <span></span>
+                  <span class="label-span-txt">Согласен с политикой обработки персональных данных</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked />
+                  <span></span>
+                  <span class="label-span-txt">Я принимаю и разделяю правила клуба</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" checked/>
+                  <span></span>
+                  <span class="label-span-txt">Подписаться на рассылку мероприятий</span>
+                </label>
+                <label class="fill-form-lab-check">
+                  <input class="fill-form-checkbox" type="checkbox" />
+                  <span class="fill-form-lab-span-wh"></span>
+                  <span class="label-span-txt">Подписаться на акции\скидки</span>
+                </label>
+              </div>
+              <div class="btn-more-photo-w">
+                <button class="btn">Вступить в клуб</button>
+              </div>
+            </form>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div><!--modal-overlay-->
+
+    @@include('var/_footer.html')
+
+  </div>
+  <!--wrapper-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/lazyload.js"></script>    
+  <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?apikey=4868c4fc-0500-4b04-ac60-2226520bdcbc&lang=ru_RU"></script>
+  <script src="js/map-stores.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
